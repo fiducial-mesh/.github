@@ -1,0 +1,44 @@
+name: Specification gap or drift
+description: Report a gap, ambiguity, contradiction, or implementation-vs-spec drift in SPEC-001 / HDBK-001.
+title: "[spec] <short description>"
+labels: ["spec"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Drift between the Specification and an implementation — or an internal contradiction in the spec — is a **finding**, not a feature. Ground every claim in the document text (cite the requirement ID; quote the line).
+  - type: input
+    id: requirement
+    attributes:
+      label: Requirement ID(s)
+      description: The `[FM-…]` requirement(s) involved, if any.
+      placeholder: "[FM-PCS-0012], [FM-INV-0007]"
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Kind
+      options:
+        - Gap (something required is unspecified)
+        - Ambiguity (a requirement admits conflicting readings)
+        - Contradiction (two clauses disagree)
+        - Drift (implementation diverges from the spec)
+        - Cross-document (SPEC ⇄ HDBK ⇄ paper mismatch)
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence (quote the text)
+      description: Quote the relevant spec/handbook/code text, with location. Don't paraphrase — quote.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed resolution
+      description: What the corrected text/behavior should be. Note if it is a normative change (needs a version bump + review chain).
+  - type: input
+    id: version
+    attributes:
+      label: Document version
+      placeholder: "SPEC-001 v1.2.1"

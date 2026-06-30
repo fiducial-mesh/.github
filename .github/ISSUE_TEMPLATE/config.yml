@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Specification & Handbook
+    url: https://github.com/fiducial-mesh/spec
+    about: Read the normative Specification (FM-SPEC-001) and Handbook (FM-HDBK-001) before filing — drift is measured against them.
+  - name: Question or discussion
+    url: https://github.com/orgs/fiducial-mesh/discussions
+    about: Open-ended questions, design discussion, and proposals that are not yet a concrete spec gap or bug.

@@ -1,0 +1,38 @@
+name: Bug report
+description: A defect in a pillar implementation, the MCC host frame, a PCS plugin, or tooling.
+title: "[bug] <short description>"
+labels: ["bug"]
+body:
+  - type: input
+    id: component
+    attributes:
+      label: Component
+      description: Which pillar / plugin / tool, and its version.
+      placeholder: "IAM pillar, v0.x  /  pcs-registry  /  …"
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+      description: What should happen — cite the requirement it should satisfy if applicable (`[FM-…]`).
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: Steps to reproduce
+      description: Minimal, deterministic steps. Include logs/output — with credentials, tokens, and internal addresses redacted.
+    validations:
+      required: true
+  - type: textarea
+    id: env
+    attributes:
+      label: Environment
+      description: OS, runtime, substrate (DB / secret store / directory / isolation runtime), relevant versions.
