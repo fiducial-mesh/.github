@@ -33,6 +33,15 @@ The Specification is what you build to; the Handbook is what you read to underst
 
 Both are developed in the open through a **multi-agent dialectical review chain** (author → adversarial review → first-principles review → human integrator) — a method that is itself part of the credited design.
 
+## Cite
+
+Archived, citable releases (CC-BY-4.0):
+
+- **Specification** — SPEC-001 v1.2.1 — DOI [`10.5281/zenodo.21109753`](https://doi.org/10.5281/zenodo.21109753)
+- **Handbook** — HDBK-001 v1.2.1 — DOI [`10.5281/zenodo.21110034`](https://doi.org/10.5281/zenodo.21110034)
+
+The companion paper publishes under its own DOI.
+
 ## Licensing
 
 - **Mesh software** — GPL-3.0
